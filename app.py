@@ -446,7 +446,7 @@ def force_region_bind(region, jwt_token):
             'Authorization': f"Bearer {jwt_token}",
             'X-Unity-Version': "2018.4.11f1",
             'X-GA': "v1 1",
-            'ReleaseVersion': "OB54",
+            'ReleaseVersion': "OB55",
             'X-Forwarded-For': FastIPSpoofer.get_ip(),
             'X-Real-IP': FastIPSpoofer.get_ip(),
         }
@@ -466,7 +466,7 @@ def major_login(uid, password, access_token, open_id, region, is_ghost):
         url = "https://loginbp.ggpolarbear.com/MajorLogin" if is_ghost or region.upper() not in ["ME","TH"] else "https://loginbp.common.ggbluefox.com/MajorLogin"
         headers = {
             "Content-Type": "application/x-www-form-urlencoded",
-            "ReleaseVersion": "OB54",
+            "ReleaseVersion": "OB55",
             "User-Agent": WAFBypass.get_ua(),
             "X-GA": "v1 1",
             "X-Unity-Version": "2018.4.11f1",
@@ -507,7 +507,7 @@ def major_register(access_token, open_id, field, uid, password, region, account_
         name = generate_random_name(account_name)
         headers = {
             "Content-Type": "application/x-www-form-urlencoded",
-            "ReleaseVersion": "OB54",
+            "ReleaseVersion": "OB55",
             "User-Agent": WAFBypass.get_ua(),
             "X-GA": "v1 1",
             "X-Unity-Version": "2018.4.",
